@@ -66,6 +66,10 @@ include('verifica_login.php')
         </div>
     </nav>
     <!--FIM do Navbar-->
+
+    <div>
+        <h5 class="display-4">Olá <?php echo $_SESSION['usuario_nome']; ?>, seja bem vindo!</h5>
+    </div>
     
 
 

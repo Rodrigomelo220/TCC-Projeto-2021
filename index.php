@@ -97,11 +97,11 @@ session_start();
       ?>
 
       <div class="form-floating">
-        <input type="email" class="form-control" id="email" name="email" placeholder="Endereço de Email">
+        <input type="email" class="form-control" id="email" name="email" placeholder="Endereço de Email" required>
 
       </div>
       <div class="form-floating">
-        <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha">
+        <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" required>
 
       </div>
 
