@@ -110,7 +110,7 @@ session_start();
       <div>
         <br>
         <p class="text-light">Não cadastrado ainda?</p>
-        <a href="#" class="text-warning">Cadastre-se</a>
+        <a href="cadastro.php" class="text-warning">Cadastre-se</a>
       </div>
 
       <p class="mt-5 mb-3 text-muted">&copy; Ψ Psoftware - 2021 <br> Rodrigo Melo</p>
