@@ -94,7 +94,7 @@
             <h1 class="text-warning">Ψ Cadastro</h1>
             <h1 class="h3 mb-3 fw-normal text-light"></h1>
 
-            <p class="text-light">É muito simples se cadastrar no Psoftware!! </p> 
+            <p class="text-light">É muito simples se cadastrar no Psoftware!! </p>
             <p class="text-light">Basta preencher os campos abaixo.</p>
 
             <div class="form-floating">
@@ -111,8 +111,8 @@
             </div>
 
             <div>
-            <a class="w-49 btn btn-lg btn-danger mr-2" href="index.php"><strong>Cancelar</strong></a>
-            <button class="w-49 btn btn-lg btn-warning " type="submit"> <strong>Cadastrar</strong></button>
+                <a class="w-49 btn btn-lg btn-danger mr-2" href="index.php"><strong>Cancelar</strong></a>
+                <button class="w-49 btn btn-lg btn-warning " type="submit"> <strong>Cadastrar</strong></button>
             </div>
 
             <p class="mt-5 mb-3 text-muted">&copy; Ψ Psoftware - 2021 <br> Rodrigo Melo</p>
