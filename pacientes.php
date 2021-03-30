@@ -1,3 +1,8 @@
+<?php 
+session_start();
+include('verifica_login.php')
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -28,25 +33,31 @@
         <div class="collapse navbar-collapse" id="nav-target">
             <ul class="navbar-nav ml-auto ">
                 <li class="nav-item">
-                    <a href="home.html" class="nav-link">Home</a>
+                    <a href="home.php" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="pacientes.html" class="nav-link active">Pacientes</a>
+                    <a href="pacientes.php" class="nav-link active">Pacientes</a>
                 </li>
                 <li class="nav-item">
-                    <a href="consultas.html" class="nav-link">Consultas</a>
+                    <a href="consultas.php" class="nav-link">Consultas</a>
                 </li>
                 <li class="nav-item">
-                    <a href="pagamentos.html" class="nav-link">Pagamentos</a>
+                    <a href="pagamentos.php" class="nav-link">Pagamentos</a>
                 </li>
             </ul>
         </div>
 
         <div class="collapse navbar-collapse" id="nav-target">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a href="" class="nav-link">Perfil</a>
-                </li>
+            <div class="dropdown">
+                    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <?php echo $_SESSION['usuario']; ?>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Editar</a>
+                        <a class="dropdown-item" href="logout.php">Logout</a>
+                    </div>
+                </div>
             </ul>
         </div>
     </nav>

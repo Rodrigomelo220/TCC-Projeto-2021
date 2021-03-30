@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -78,20 +81,27 @@
 <body class="text-center bg-dark">
 
   <main class="form-signin">
-    <form>
+    <form action="login.php" method="POST">
       <h1 class="text-warning">Ψ Psoftware</h1>
       <h1 class="h3 mb-3 fw-normal text-light">Login</h1>
 
+      <?php 
+      if (isset($_SESSION['nao_autenticado'])):
+      ?>
       <div class="alert alert-warning" role="alert">
         Email e/ou senha inválidos!
       </div>
+      <?php
+      endif;
+      unset($_SESSION['nao_autenticado']);
+      ?>
 
       <div class="form-floating">
-        <input type="email" class="form-control" id="floatingInput" placeholder="Endereço de Email">
+        <input type="email" class="form-control" id="email" name="email" placeholder="Endereço de Email">
 
       </div>
       <div class="form-floating">
-        <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
+        <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha">
 
       </div>
 

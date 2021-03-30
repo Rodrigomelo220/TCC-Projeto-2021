@@ -1,5 +1,11 @@
+<?php
+session_start();
+include('verifica_login.php')
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +15,11 @@
     <link rel="stylesheet" href="css/bootstrap.css">
 
     <!--Favicom-->
-  <link rel="shortcut icon" href="icon/favicon.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="icon/favicon.png" type="image/x-icon" />
 
-    <title>Psoftware - Consultas</title>
+    <title>Psoftware - Home</title>
 </head>
+
 <body>
     <!--Inicio do Navbar-->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
@@ -28,25 +35,33 @@
         <div class="collapse navbar-collapse" id="nav-target">
             <ul class="navbar-nav ml-auto ">
                 <li class="nav-item">
-                    <a href="home.html" class="nav-link"> <i class=" bi bi-person-fill"></i> Home</a>
+                    <a href="home.php" class="nav-link active"> <i class=" bi bi-person-fill"></i> Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="pacientes.html" class="nav-link">Pacientes</a>
+                    <a href="pacientes.php" class="nav-link">Pacientes</a>
                 </li>
                 <li class="nav-item">
-                    <a href="consultas.html" class="nav-link active">Consultas</a>
+                    <a href="consultas.php" class="nav-link">Consultas</a>
                 </li>
                 <li class="nav-item">
-                    <a href="pagamentos.html" class="nav-link">Pagamentos</a>
+                    <a href="pagamentos.php" class="nav-link">Pagamentos</a>
                 </li>
             </ul>
         </div>
 
         <div class="collapse navbar-collapse" id="nav-target">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a href="" class="nav-link">Perfil</a>
-                </li>
+
+                <div class="dropdown">
+                    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <?php echo $_SESSION['usuario']; ?>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Editar</a>
+                        <a class="dropdown-item" href="logout.php">Logout</a>
+                    </div>
+                </div>
+
             </ul>
         </div>
     </nav>
@@ -60,4 +75,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
