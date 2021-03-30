@@ -88,7 +88,7 @@
      
         <!--Inicio do Formulario-->
     <main class="form-signin">
-        <form action="login.php" method="POST">
+        <form action="cadastrar.php" method="POST">
             <h1 class="text-warning">Ψ Cadastro</h1>
             <h1 class="h3 mb-3 fw-normal text-light"></h1>
 
