@@ -92,31 +92,35 @@ session_start();
             <h1 class="text-warning">Ψ Cadastro</h1>
             <h1 class="h3 mb-3 fw-normal text-light"></h1>
 
-            <p class="text-light">É muito simples se cadastrar no Psoftware!! </p>
+            <p class="text-light">É muito simples se cadastrar no Psoftware! </p>
             <p class="text-light">Basta preencher os campos abaixo.</p>
             
             <!--Alerts-->
             
             <?php
-            if($_SESSION['status_cadastro']):
+            if(isset($_SESSION['status_cadastro'])):
             ?>
+
             <div class="alert alert-success" role="alert">
             <h6 class="text-success"><strong>Cadastro Efetuado!!</strong></h6>
             <p>Faça seu login informando o seu email e senha <a class="text-success" href="index.php"><strong>aqui</strong></a>.</p>
             </div>
-            <?php
+
+            <?php 
             endif;
             unset($_SESSION['status_cadastro']);
             ?>
 
             <?php
-            if($_SESSION['usuario_existe']):
+            if(isset($_SESSION['usuario_existe'])):
             ?>
+
             <div class="alert alert-warning" role="alert">
             <h6 class="text-warnig">Atenção!!</h6>
             <p>O usuário já existe. Informe outro e tente novamente.</p>
             </p>
             </div>
+
             <?php
             endif;
             unset($_SESSION['usuario_existe']);
