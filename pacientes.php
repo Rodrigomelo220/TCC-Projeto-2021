@@ -51,7 +51,7 @@ include('verifica_login.php')
             <ul class="navbar-nav ml-auto">
             <div class="dropdown">
                     <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <?php echo $_SESSION['usuario']; ?>
+                        <?php echo $_SESSION['usuario_nome']; ?>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="#">Editar</a>
