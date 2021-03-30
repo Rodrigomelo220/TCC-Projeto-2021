@@ -82,13 +82,11 @@
         }
     </style>
 
-
-    <!-- Custom styles for this template -->
-    <!--<link href="signin.css" rel="stylesheet"> -->
 </head>
 
 <body class="text-center bg-dark">
-
+     
+        <!--Inicio do Formulario-->
     <main class="form-signin">
         <form action="login.php" method="POST">
             <h1 class="text-warning">Ψ Cadastro</h1>
@@ -96,7 +94,20 @@
 
             <p class="text-light">É muito simples se cadastrar no Psoftware!! </p>
             <p class="text-light">Basta preencher os campos abaixo.</p>
+            
+            <!--Alerts-->
+            <div class="alert alert-success" role="alert">
+            <h6 class="text-success"><strong>Cadastro Efetuado!!</strong></h6>
+            <p>Faça seu login informando o seu email e senha <a class="text-success" href="index.php"><strong>aqui</strong></a>.</p>
+            </div>
 
+            <div class="alert alert-warning" role="alert">
+            <h6 class="text-warnig">Atenção!!</h6>
+            <p>O usuário já existe. Informe outro e tente novamente.</p>
+            </p>
+            </div>
+
+            <!--Inputs de cadastro-->
             <div class="form-floating">
                 <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required>
 
@@ -110,11 +121,13 @@
 
             </div>
 
+            <!--BTNs de cadastrar e cancelar-->
             <div>
                 <a class="w-49 btn btn-lg btn-danger mr-2" href="index.php"><strong>Cancelar</strong></a>
                 <button class="w-49 btn btn-lg btn-warning " type="submit"> <strong>Cadastrar</strong></button>
             </div>
 
+            <!--Rodapé-->
             <p class="mt-5 mb-3 text-muted">&copy; Ψ Psoftware - 2021 <br> Rodrigo Melo</p>
         </form>
     </main>
