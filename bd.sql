@@ -7,4 +7,4 @@ create table usuario (
     usuario_email VARCHAR(200) not null,
     usuario_senha VARCHAR(200) not null,
     data_cadastro datetime
-)
+);
