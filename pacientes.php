@@ -24,7 +24,7 @@ include('verifica_login.php')
     <!--Inicio do Navbar-->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <!--Logo-->
-        <a href="home.html" class="navbar-brand"> <strong>Ψ</strong> Psoftware</a>
+        <a href="home.html" class="navbar-brand text-warning"> <strong>Ψ</strong> Psoftware</a>
 
         <!--Menu Hamburguer-->
         <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
